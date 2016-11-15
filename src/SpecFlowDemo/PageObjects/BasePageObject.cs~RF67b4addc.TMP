@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using OpenQA.Selenium;
+
+namespace SpecFlowDemo.PagesObjects
+{
+    public class BasePageObject
+    {
+        protected IWebDriver Driver { get; set; }
+
+        public BasePageObject(IWebDriver driver)
+        {
+            Driver = driver;
+        }
+    }
+}

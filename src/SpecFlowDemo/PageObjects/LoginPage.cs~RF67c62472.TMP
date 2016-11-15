@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium.Support.UI;
+
+namespace SpecFlowDemo.PagesObjects
+{
+    public class LoginPage :BasePageObject
+    {
+        [FindsBy(How = How.LinkText,Using = "Forgot password?")]
+        private IWebElement forgotPasswordLink;
+        public LoginPage(IWebDriver driver) : base(driver)
+        {
+            VerifyPageLoaded(By.CssSelector("form[action='/session']"));
+        }
+
+        public static LoginPage GoToPage(IWebDriver driver)
+        {
+            driver.Navigate().GoToUrl("https://github.com/login");
+            return new LoginPage(driver);
+        }
+
+        public ResetPasswordPage ClickForgotPassword()
+        {
+            forgotPasswordLink.Click();
+            return new ResetPasswordPage(Driver);
+        }
+    }
+}

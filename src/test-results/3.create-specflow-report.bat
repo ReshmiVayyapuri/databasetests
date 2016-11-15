@@ -1,0 +1,1 @@
+"C:\QA\QATools\SpecFlowDemo\packages\SpecFlow.2.1.0\tools\specflow.exe" nunitexecutionreport "C:\QA\QATools\SpecFlowDemo\SpecFlowDemo\SpecFlowDemo.csproj" /out:SpecFlowResults.html /xmlTestResult:TestResult.xml /testOutput:TestOutput.txt

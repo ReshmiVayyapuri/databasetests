@@ -1,0 +1,1 @@
+"C:\QA\QATools\SpecFlowDemo\packages\Pickles.CommandLine.2.10.0\tools\pickles.exe" --feature-directory="C:\QA\QATools\SpecFlowDemo\SpecFlowDemo\Features" --output-directory="pickles-dhtmlnunit3" --documentation-format=dhtml --link-results-file="testresult.xml" --test-results-format=nunit3

@@ -1,0 +1,15 @@
+﻿using System;
+using TechTalk.SpecFlow;
+
+namespace SpecFlowDemo
+{
+    [Binding]
+    public class CreatePersonalAccountSteps
+    {
+        [Then(@"I should see the create personal account page")]
+        public void ThenIShouldSeeTheCreatePersonalAccountPage()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}

@@ -1,0 +1,85 @@
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
+
+namespace SpecFlowDemo.PageObjects
+{
+    public class LoginPage :BasePageObject
+    {
+        [FindsBy(How = How.LinkText,Using = "Forgot password?")]
+        private IWebElement forgotPasswordLink;
+
+        [FindsBy(How = How.LinkText, Using = "Create an account")]
+        private IWebElement createAnAccountLink;
+
+        [FindsBy(How = How.Id, Using = "login_field")]
+        private IWebElement usernameOrEmailAddressTextField;
+
+        [FindsBy(How = How.Id, Using = "password")]
+        private IWebElement passwordTextField;
+
+
+        [FindsBy(How = How.CssSelector, Using = "input[value='Sign in']")]
+        private IWebElement SignInButton;
+
+        public LoginPage(IWebDriver driver) : base(driver)
+        {
+            VerifyPageLoaded(By.CssSelector("form[action='/session']"));
+        }
+
+        public static LoginPage GoToPage(IWebDriver driver)
+        {
+            driver.Navigate().GoToUrl("https://github.com/login");
+            return new LoginPage(driver);
+        }
+
+        public ResetPasswordPage ClickForgotPassword()
+        {
+            forgotPasswordLink.Click();
+            return new ResetPasswordPage(driver);
+        }
+
+        public CreatePersonalAccountPage ClickCreateAnAccount()
+        {
+            createAnAccountLink.Click();
+            return new CreatePersonalAccountPage(driver);
+        }
+
+        public string UsernameOrEmail
+        {
+            get { return usernameOrEmailAddressTextField.Text; }
+            set
+            {
+                usernameOrEmailAddressTextField.Clear();
+                usernameOrEmailAddressTextField.SendKeys(value);
+            }
+        }
+
+        public string Password
+        {
+            get { return passwordTextField.Text; }
+            set
+            {
+                passwordTextField.Clear();
+                passwordTextField.SendKeys(value);
+            }
+        }
+
+        public DashboardPage ClickSignInSuccess()
+        {
+            SignInButton.Click();
+            return new DashboardPage(driver);
+        }
+
+        public LoginPage ClickSignIn()
+        {
+            SignInButton.Click();
+            return this;
+        }
+
+        public LoginPage ClickSignInFailure()
+        {
+            SignInButton.Click();
+            return new LoginPage(driver);
+        }
+    }
+}

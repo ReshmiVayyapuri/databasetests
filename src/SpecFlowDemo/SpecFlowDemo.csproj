@@ -17,8 +17,8 @@
   <PropertyGroup>
     <Pickles_Generate>True</Pickles_Generate>
     <Pickles_DocumentationFormat>dhtml</Pickles_DocumentationFormat>
-	<Pickles_OutputDirectory>$(MSBuildProjectDirectory)\Living Documentation</Pickles_OutputDirectory>
-</PropertyGroup>
+    <Pickles_OutputDirectory>$(MSBuildProjectDirectory)\Living Documentation</Pickles_OutputDirectory>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -93,7 +93,8 @@
     <Compile Include="PageObjects\BasePageObject.cs" />
     <Compile Include="PageObjects\CreatePersonalAccountPage.cs" />
     <Compile Include="PageObjects\CreateNewRepositoryPage.cs" />
-    <Compile Include="PageObjects\IWebElementExtensions.cs" />
+    <Compile Include="PageObjects\DashboardRepositoryRow.cs" />
+    <Compile Include="PageObjects\WebElementExtensions.cs" />
     <Compile Include="PageObjects\LoginPage.cs" />
     <Compile Include="PageObjects\DashboardPage.cs" />
     <Compile Include="PageObjects\ProjectShowcasesPage.cs" />
@@ -132,6 +133,7 @@
       <LastGenOutput>Login success.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="PageObjects\PageObjectsClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

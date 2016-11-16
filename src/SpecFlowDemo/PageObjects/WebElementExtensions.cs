@@ -8,7 +8,7 @@ using OpenQA.Selenium.Internal;
 
 namespace SpecFlowDemo.PageObjects
 {
-    public static class IWebElementExtensions
+    public static class WebElementExtensions
     {
         public static T ClickAndContinueTo<T>(this IWebElement element) where T : BasePageObject
         {

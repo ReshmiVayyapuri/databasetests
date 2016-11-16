@@ -30,22 +30,10 @@ namespace SpecFlowDemo.PageObjects
 
         public ProjectShowcasesPage ClickExploreGitHub() => exploreGitHubButton.ClickAndContinueTo<ProjectShowcasesPage>();
 
-        public List<RepositoryRow> YourRepositories
-            => yourRepositories.Where(a=>a.Displayed).Select(a => new RepositoryRow(driver,a)).ToList();
+        public List<DashboardRepositoryRow> YourRepositories
+            => yourRepositories.Where(a=>a.Displayed).Select(a => new DashboardRepositoryRow(driver,a)).ToList();
 
-        public class RepositoryRow : BasePageObject
-        {
-            private readonly IWebElement _rowElement;
-
-            public RepositoryRow(IWebDriver driver,IWebElement rowElement) : base(driver)
-            {
-                _rowElement = rowElement;
-            }
-
-            public string Name => _rowElement.Text;
-            public RepositoryPageCodeTab GoToRepository() 
-                => _rowElement.ClickAndContinueTo<RepositoryPageCodeTab>();
-        }
+        
 
         public DashboardPage SearchForRepository(string repository)
         {

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="SpecFlowDemo.PageObjects.BasePageObject">
+    <Position X="12.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>PageObjects\BasePageObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecFlowDemo.PageObjects.CreateNewRepositoryPage">
+    <Position X="11.25" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageObjects\CreateNewRepositoryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecFlowDemo.PageObjects.CreatePersonalAccountPage">
+    <Position X="17" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageObjects\CreatePersonalAccountPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecFlowDemo.PageObjects.DashboardPage">
+    <Position X="0.5" Y="3" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAQAEEAAAABEAAAAAAAAAAAAKAAAAA=</HashCode>
+      <FileName>PageObjects\DashboardPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="YourRepositories" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SpecFlowDemo.PageObjects.IWebElementExtensions" Collapsed="true">
+    <Position X="27.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>PageObjects\IWebElementExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecFlowDemo.PageObjects.LoginPage">
+    <Position X="20" Y="3" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAACCAAAAAAAAAEAAAAAIABAIAABISAAAAABABgAA=</HashCode>
+      <FileName>PageObjects\LoginPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecFlowDemo.PageObjects.ProjectShowcasesPage">
+    <Position X="4.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageObjects\ProjectShowcasesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecFlowDemo.PageObjects.RepositoryPageCodeTab">
+    <Position X="14.25" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageObjects\RepositoryPageCodeTab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecFlowDemo.PageObjects.ResetPasswordPage">
+    <Position X="24.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageObjects\ResetPasswordPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecFlowDemo.PageObjects.DashboardRepositoryRow">
+    <Position X="7.5" Y="3" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>PageObjects\DashboardRepositoryRow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

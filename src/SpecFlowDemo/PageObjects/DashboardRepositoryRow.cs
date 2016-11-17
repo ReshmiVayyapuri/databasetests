@@ -6,7 +6,8 @@ namespace SpecFlowDemo.PageObjects
     {
         private readonly IWebElement _rowElement;
 
-        public DashboardRepositoryRow(IWebDriver driver, IWebElement rowElement) : base(driver)
+        public DashboardRepositoryRow(IWebDriver driver, IWebElement rowElement) 
+            : base(driver)
         {
             _rowElement = rowElement;
         }

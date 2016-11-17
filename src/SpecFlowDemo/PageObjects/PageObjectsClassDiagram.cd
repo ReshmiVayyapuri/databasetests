@@ -31,11 +31,11 @@
       <Property Name="YourRepositories" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="SpecFlowDemo.PageObjects.IWebElementExtensions" Collapsed="true">
+  <Class Name="SpecFlowDemo.PageObjects.WebElementExtensions" Collapsed="true">
     <Position X="27.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
-      <FileName>PageObjects\IWebElementExtensions.cs</FileName>
+      <FileName>PageObjects\WebElementExtensions.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SpecFlowDemo.PageObjects.LoginPage">
@@ -46,7 +46,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SpecFlowDemo.PageObjects.ProjectShowcasesPage">
-    <Position X="4.75" Y="3" Width="2" />
+    <Position X="8.5" Y="3" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PageObjects\ProjectShowcasesPage.cs</FileName>
@@ -67,7 +67,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SpecFlowDemo.PageObjects.DashboardRepositoryRow">
-    <Position X="7.5" Y="3" Width="3" />
+    <Position X="7.25" Y="5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>PageObjects\DashboardRepositoryRow.cs</FileName>

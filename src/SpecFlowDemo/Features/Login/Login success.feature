@@ -19,3 +19,16 @@ Scenario: User can login by username
 	And I fill the password with "SpecFlowDemo@sharklasers.com"
 	And I click Sign in
 	Then I should see the dashboard
+
+
+#Better implmentation
+Scenario: Login with username and password
+	Given I am in the login page
+	When I login by username and password
+	Then I should see the dashboard
+
+#Better implmentation
+Scenario: Login with email and password
+	Given I am in the login page
+	When I login by email and password
+	Then I should see the dashboard

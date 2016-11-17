@@ -1,9 +1,9 @@
 # SpecFlowDemo
-Demo project of specification-by-example on GitHub pages using SpecFlow, NUnit 3 and Selenium Web-Driver 
+Demonstration of specification-by-example on GitHub pages using SpecFlow, NUnit 3 and Selenium Web-Driver
 
 ## Synopsis
 
-The project is demonstration of Specification-By-Example (BDD) on GitHub pages, it included features in the GitHub login page and dashboard in Cucumber (Gherkin) in SpecFlow. The implementation of the steps in using the UI - by Selenium WebDriver, this is also a demo for best practices of Selenium (PageObjects,etc.) together with best practices of SpecFlow
+The project is demonstration of Specification-By-Example (BDD) on GitHub login and dashboard pages. With Cucumber (Gherkin) features implemented by SpecFlow. The implementation of the steps is using Selenium WebDriver using best practices of Selenium (PageObjects,etc.) together with best practices of SpecFlow.
 
 ## Code Example
 

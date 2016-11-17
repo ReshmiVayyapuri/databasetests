@@ -3,8 +3,7 @@ Demo project of specification-by-example on GitHub pages using SpecFlow, NUnit 3
 
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. 
-This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+The project is demonstration of Specification-By-Example (BDD) on GitHub pages, it included features in the GitHub login page and dashboard in Cucumber (Gherkin) in SpecFlow. The implementation of the steps in using the UI - by Selenium WebDriver, this is also a demo for best practices of Selenium (PageObjects,etc.) together with best practices of SpecFlow
 
 ## Code Example
 

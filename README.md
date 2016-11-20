@@ -18,7 +18,7 @@ Scenario: Login with email and password
 	When I login by email and password
 	Then I should see the dashboard
 ```
-##### The implementation
+##### The step implementation:
 ```C#
         [When(@"I login by email and password")]
         public void WhenILoginByEmailAndPassword()
@@ -30,24 +30,13 @@ Scenario: Login with email and password
 
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+This project was created to demonstrate how to write good executable specifications in SpecFlow and Selenium using best practices
+see my presentation:
+http://www.slideshare.net/LirazShay/bdd-with-specflow-and-selenium-webdriver
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+Visual Studio 2012, 2013 or 2015, even the free Community edition is perfect. Install the SpecFlow extension (downloadable from Visual Studio Gallery).
+Also need NUnit 3 Test Adapter extension
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+Download the project, build and run the tests

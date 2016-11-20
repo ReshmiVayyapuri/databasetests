@@ -6,8 +6,27 @@ Demonstration of specification-by-example on GitHub pages using SpecFlow, NUnit 
 The project is demonstration of Specification-By-Example (BDD) on GitHub login and dashboard pages. With Cucumber (Gherkin) features implemented by SpecFlow. The implementation of the steps is using Selenium WebDriver using best practices of Selenium (PageObjects,etc.) together with best practices of SpecFlow.
 
 ## Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+```Gherkin
+@Login
+Feature: Login success
+	In order to access to my Github account
+	As a user with existing account
+	I want to be able to sign in to GitHub 
+  
+Scenario: Login with email and password
+	Given I am in the login page
+	When I login by email and password
+	Then I should see the dashboard
+```
+##### The implementation
+```C#
+        [When(@"I login by email and password")]
+        public void WhenILoginByEmailAndPassword()
+        {
+            var user = TestConfiguration.GitHubUser;
+            loginPage.LoginSuccess(user.Email, user.Password);
+        }
+```
 
 ## Motivation
 

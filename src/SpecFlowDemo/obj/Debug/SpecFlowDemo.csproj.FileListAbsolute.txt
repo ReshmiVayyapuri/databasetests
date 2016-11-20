@@ -11,3 +11,17 @@ C:\QA\QATools\SpecFlowDemo\SpecFlowDemo\bin\Debug\WebDriver.xml
 C:\QA\QATools\SpecFlowDemo\SpecFlowDemo\bin\Debug\WebDriver.Support.xml
 C:\QA\QATools\SpecFlowDemo\SpecFlowDemo\obj\Debug\SpecFlowDemo.dll
 C:\QA\QATools\SpecFlowDemo\SpecFlowDemo\obj\Debug\SpecFlowDemo.pdb
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\chromedriver.exe
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\SpecFlowDemo.dll.config
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\SpecFlowDemo.dll
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\SpecFlowDemo.pdb
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\nunit.framework.dll
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\TechTalk.SpecFlow.dll
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\WebDriver.dll
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\WebDriver.Support.dll
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\nunit.framework.xml
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\WebDriver.xml
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\bin\Debug\WebDriver.Support.xml
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\obj\Debug\SpecFlowDemo.csprojResolveAssemblyReference.cache
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\obj\Debug\SpecFlowDemo.dll
+C:\QA\QATools\SpecFlowDemo\src\SpecFlowDemo\obj\Debug\SpecFlowDemo.pdb

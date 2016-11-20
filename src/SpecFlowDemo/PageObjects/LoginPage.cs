@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
 namespace SpecFlowDemo.PageObjects
@@ -60,6 +61,7 @@ namespace SpecFlowDemo.PageObjects
 
         public DashboardPage ClickSignInSuccess() 
             => SignInButton.ClickAndContinueTo<DashboardPage>();
+
 
         public void ClickSignIn()
         {

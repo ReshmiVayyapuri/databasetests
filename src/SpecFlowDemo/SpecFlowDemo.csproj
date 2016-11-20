@@ -89,6 +89,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Login success.feature</DependentUpon>
     </Compile>
+    <Compile Include="GitHubUser.cs" />
     <Compile Include="Hooks.cs" />
     <Compile Include="PageObjects\BasePageObject.cs" />
     <Compile Include="PageObjects\CreatePersonalAccountPage.cs" />
@@ -109,6 +110,7 @@
     <Compile Include="Steps\ExploreGitHubSteps.cs" />
     <Compile Include="Steps\ResetPasswordSteps.cs" />
     <Compile Include="Steps\LoginPageSteps.cs" />
+    <Compile Include="TestConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

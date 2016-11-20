@@ -58,5 +58,21 @@ namespace SpecFlowDemo.Steps
             wait.Until(ExpectedConditions.TextToBePresentInElementLocated(By.CssSelector("body"), errorMessage));
         }
 
+        [When(@"I login by username and password")]
+        public void WhenILoginByUsernameAndPassword()
+        {
+            var user = TestConfiguration.GitHubUser;
+            loginPage.LoginSuccess(user.Username, user.Password);
+        }
+
+        [When(@"I login by email and password")]
+        public void WhenILoginByEmailAndPassword()
+        {
+            var user = TestConfiguration.GitHubUser;
+            loginPage.LoginSuccess(user.Email, user.Password);
+        }
+
+
+
     }
 }

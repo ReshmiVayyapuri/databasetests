@@ -409,6 +409,80 @@ jsonPWrapper ({
                 "NativeKeyword": "Then ",
                 "Name": "I should see the dashboard",
                 "StepComments": [],
+                "AfterLastStepComments": [
+                  {
+                    "Text": "#Better implmentation"
+                  }
+                ]
+              }
+            ],
+            "Tags": [],
+            "Result": {
+              "WasExecuted": false,
+              "WasSuccessful": false
+            }
+          },
+          {
+            "Name": "Login with username and password",
+            "Slug": "login-with-username-and-password",
+            "Description": "",
+            "Steps": [
+              {
+                "Keyword": "Given",
+                "NativeKeyword": "Given ",
+                "Name": "I am in the login page",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "I login by username and password",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "Then",
+                "NativeKeyword": "Then ",
+                "Name": "I should see the dashboard",
+                "StepComments": [],
+                "AfterLastStepComments": [
+                  {
+                    "Text": "#Better implmentation"
+                  }
+                ]
+              }
+            ],
+            "Tags": [],
+            "Result": {
+              "WasExecuted": false,
+              "WasSuccessful": false
+            }
+          },
+          {
+            "Name": "Login with email and password",
+            "Slug": "login-with-email-and-password",
+            "Description": "",
+            "Steps": [
+              {
+                "Keyword": "Given",
+                "NativeKeyword": "Given ",
+                "Name": "I am in the login page",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "I login by email and password",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "Then",
+                "NativeKeyword": "Then ",
+                "Name": "I should see the dashboard",
+                "StepComments": [],
                 "AfterLastStepComments": []
               }
             ],
@@ -444,10 +518,10 @@ jsonPWrapper ({
       },
       {
         "Tag": "@Login",
-        "Total": 5,
+        "Total": 7,
         "Passing": 0,
         "Failing": 0,
-        "Inconclusive": 5
+        "Inconclusive": 7
       }
     ],
     "Folders": [
@@ -460,10 +534,10 @@ jsonPWrapper ({
       },
       {
         "Folder": "Login",
-        "Total": 5,
+        "Total": 7,
         "Passing": 0,
         "Failing": 0,
-        "Inconclusive": 5
+        "Inconclusive": 7
       }
     ],
     "NotTestedFolders": [
@@ -483,10 +557,10 @@ jsonPWrapper ({
       }
     ],
     "Scenarios": {
-      "Total": 9,
+      "Total": 11,
       "Passing": 0,
       "Failing": 0,
-      "Inconclusive": 9
+      "Inconclusive": 11
     },
     "Features": {
       "Total": 5,
@@ -496,6 +570,6 @@ jsonPWrapper ({
     }
   },
   "Configuration": {
-    "GeneratedOn": "17 November 2016 10:47:15"
+    "GeneratedOn": "20 November 2016 16:30:50"
   }
 });

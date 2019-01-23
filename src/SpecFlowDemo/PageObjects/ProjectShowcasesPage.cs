@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 
 namespace SpecFlowDemo.PageObjects
 {
@@ -6,7 +7,8 @@ namespace SpecFlowDemo.PageObjects
     {
         public ProjectShowcasesPage(IWebDriver driver) : base(driver)
         {
-            VerifyPageLoaded(By.Id("explore-featured"));
+            if(!driver.Url.EndsWith("explore"))
+                throw new InvalidOperationException("Page not loaded");
         }
     }
 }

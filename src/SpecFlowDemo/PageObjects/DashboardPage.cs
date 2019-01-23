@@ -13,7 +13,7 @@ namespace SpecFlowDemo.PageObjects
         [FindsBy(How = How.LinkText, Using = "Explore GitHub")]
         private IWebElement exploreGitHubButton;
 
-        [FindsBy(How = How.CssSelector, Using = "#your_repos span.repo")]
+        [FindsBy(How = How.CssSelector, Using = ".dashboard-sidebar .js-repos-container [data-hovercard-type=repository]")]
         private IList<IWebElement> yourRepositories;
 
 
@@ -31,9 +31,17 @@ namespace SpecFlowDemo.PageObjects
         public ProjectShowcasesPage ClickExploreGitHub() => exploreGitHubButton.ClickAndContinueTo<ProjectShowcasesPage>();
 
         public List<DashboardRepositoryRow> YourRepositories
-            => yourRepositories.Where(a=>a.Displayed).Select(a => new DashboardRepositoryRow(driver,a)).ToList();
+        {
+            get
+            {
+                var c = yourRepositories.Count;
+                var repositories = yourRepositories;
+                var webElements = repositories.Where(a => a.Displayed);
+                return webElements.Select(a => new DashboardRepositoryRow(driver, a))
+                    .ToList();
+            }
+        }
 
-        
 
         public DashboardPage SearchForRepository(string repository)
         {

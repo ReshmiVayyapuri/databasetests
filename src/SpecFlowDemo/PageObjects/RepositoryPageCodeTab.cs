@@ -6,7 +6,7 @@ namespace SpecFlowDemo.PageObjects
     {
         public RepositoryPageCodeTab(IWebDriver driver) : base(driver)
         {
-            VerifyPageLoaded(By.CssSelector("a[aria-selected='true'][data-selected-links*='repo_source']"));
+            VerifyPageLoaded(By.CssSelector("nav.reponav"));
         }
     }
 }

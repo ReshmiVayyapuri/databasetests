@@ -7,7 +7,7 @@ namespace SpecFlowDemo.PageObjects
 {
     public class DashboardPage : BasePageObject
     {
-        [FindsBy(How = How.PartialLinkText, Using = "New repository")]
+        [FindsBy(How = How.XPath, Using = "//*[contains(@class,'dashboard-sidebar')]//*[contains(@class,'js-repos-container')]//a[normalize-space()='New']")]
         private IWebElement newRepositoryButton;
 
         [FindsBy(How = How.LinkText, Using = "Explore GitHub")]

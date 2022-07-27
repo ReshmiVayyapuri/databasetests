@@ -1,17 +1,10 @@
 ﻿@Login
-Feature: Links from the login page
-	In order to navigate to other pages
-	As a user in the login page
-	I want have some links in the login page
+Feature: Database Testing
 
-	
-Scenario: User can go to reset password from the login page
-	Given I am in the login page
-	When I click Forgot password?
-	Then I should see the reset password page
+Scenario: Sample Scenario
 
-	
-Scenario: User can go to create an account page from the login page
-	Given I am in the login page
-	When I click create an account
-	Then I should see the create personal account page
+	Given I connect to First DB 
+	When I fetch first results and save
+	And I connect to Second DB 
+	When I fetch second results and save
+	Then  compare boths results

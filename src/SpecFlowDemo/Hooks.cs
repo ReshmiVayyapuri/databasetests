@@ -13,18 +13,18 @@ namespace SpecFlowDemo
     [Binding]
     public sealed class Hooks : TechTalk.SpecFlow.Steps
     {
-        [BeforeScenario]
-        public void OpenBrowser()
-        {
-            var driver = new ChromeDriver();
-            ScenarioContext.Add("driver", driver);
-        }
+        //[BeforeScenario]
+        //public void OpenBrowser()
+        //{
+        //    var driver = new ChromeDriver();
+        //    ScenarioContext.Add("driver", driver);
+        //}
 
-        [AfterScenario]
-        public void QuitBrowser()
-        {
-            ScenarioContext.Get<IWebDriver>("driver").Quit();
-        }
+        //[AfterScenario]
+        //public void QuitBrowser()
+        //{
+        //    ScenarioContext.Get<IWebDriver>("driver").Quit();
+        //}
 
 
         [AfterStep]

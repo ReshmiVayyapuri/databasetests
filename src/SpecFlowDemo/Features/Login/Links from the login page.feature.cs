@@ -18,9 +18,9 @@ namespace SpecFlowDemo.Features.Login
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Links from the login page")]
+    [NUnit.Framework.DescriptionAttribute("Database Testing")]
     [NUnit.Framework.CategoryAttribute("Login")]
-    public partial class LinksFromTheLoginPageFeature
+    public partial class DatabaseTestingFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -32,8 +32,7 @@ namespace SpecFlowDemo.Features.Login
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Links from the login page", "\tIn order to navigate to other pages\r\n\tAs a user in the login page\r\n\tI want have " +
-                    "some links in the login page", ProgrammingLanguage.CSharp, new string[] {
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Database Testing", null, ProgrammingLanguage.CSharp, new string[] {
                         "Login"});
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -73,37 +72,23 @@ namespace SpecFlowDemo.Features.Login
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User can go to reset password from the login page")]
-        public virtual void UserCanGoToResetPasswordFromTheLoginPage()
+        [NUnit.Framework.DescriptionAttribute("Sample Scenario")]
+        public virtual void SampleScenario()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User can go to reset password from the login page", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sample Scenario", null, ((string[])(null)));
+#line 4
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 6
+ testRunner.Given("I connect to First DB", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 7
+ testRunner.When("I fetch first results and save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 8
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
+ testRunner.And("I connect to Second DB", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.Given("I am in the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.When("I fetch second results and save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
- testRunner.When("I click Forgot password?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
- testRunner.Then("I should see the reset password page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User can go to create an account page from the login page")]
-        public virtual void UserCanGoToCreateAnAccountPageFromTheLoginPage()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User can go to create an account page from the login page", null, ((string[])(null)));
-#line 14
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 15
- testRunner.Given("I am in the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 16
- testRunner.When("I click create an account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 17
- testRunner.Then("I should see the create personal account page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("compare boths results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
